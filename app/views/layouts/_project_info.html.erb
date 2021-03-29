@@ -1,0 +1,12 @@
+    <div class="col my-auto <%= @text_side %> ">
+      <h2 class="project-title">
+        <%= @meta['property']['og:title'][0] %>
+      </h2>
+      <p class="project-description">
+        <%= @meta['property']['og:description'][0] %>
+      </p>
+      <p class="github-link btn btn-dark">
+        <i class="fab fa-github"></i>
+        <%= link_to "Open github repo", @project.github_link, class:"github-link " %>
+      </p>
+    </div>

@@ -1,0 +1,66 @@
+.project-list {
+}
+
+.project-container {
+  background: linear-gradient(rgb(random($limit: 100),random($limit: 50),random($limit: 50)),
+  rgb(random($limit: 100),random($limit: 50),random($limit: 50)));
+  height: 100vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.welcome-section {
+  height: 100vh;
+  background: linear-gradient(rgb(85, 104, 85), black);
+  h1 {
+    letter-spacing: 2px;
+    color: rgb(246, 164, 255);
+  }
+}
+
+.image-container {
+  margin-top: 3rem;
+  filter: brightness(75%);
+  transition-property: filter;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    filter: brightness(100%);
+  }
+}
+
+.project-url {
+  font-size: 300px;
+  position: relative;
+  background-color: red;
+  top: 0;
+  width: 200px;
+  object-fit: cover;
+ 
+
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.project-title { 
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.164);
+}
+
+.project-description {
+  color: white
+}
+
+.github-link {
+  text-decoration: none;
+  color: white;
+  &:hover{
+    text-decoration: none;
+    color: white;
+
+  }
+}

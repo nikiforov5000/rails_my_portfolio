@@ -1,0 +1,8 @@
+  
+<div class="project-container">
+  <div class="row">
+    <% @text_side = "text-right" %>
+    <%= render partial: 'layouts/project_info', locals: { text_side: @text_side } %>
+    <%= render partial: 'layouts/project_image' %>
+  </div>
+</div>

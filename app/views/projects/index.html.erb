@@ -1,1 +1,18 @@
-<h1>projects index page</h1>
+<div class="welcome-section" style="overflow: hidden;">
+  <h1 class="text-center pt-5">
+    hi, this is my portfolio
+  </h1>
+</div>
+<div class="project-list">
+  <% @projects.each_with_index do |project, index| %>
+    <% page = MetaInspector.new(project.url) %>
+    <% @meta = page.meta_tags %>
+    <% @project = project %>
+    <% if index.even? %>
+      <%= render 'layouts/project_left', locals: { meta: @meta, project: @project } %>
+    <% else %>
+      <%= render 'layouts/project_right', locals: { meta: @meta, project: @project } %>
+    <% end %>
+
+  <% end %>
+</div>
